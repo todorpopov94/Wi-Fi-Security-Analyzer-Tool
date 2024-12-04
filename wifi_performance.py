@@ -13,7 +13,7 @@ def measure_latency(host="8.8.8.8"):
     return latency
 
 
-def measure_throughput(url="https://www.youtube.com/watch?v=JzEeK8JcgpU&t=164s"):
+def measure_throughput(url="http://speedtest.tele2.net/1MB.zip"):  # Here you can insert an URL by your choice
     print("Measuring download speed...")
     start_time = time.time()
     response = requests.get(url, stream=True)
