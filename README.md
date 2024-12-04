@@ -27,9 +27,10 @@ Prerequisites
 Installation
 1. Clone or download the repository:
    git clone https://github.com/todorpopov94/Wi-Fi-Security-Analyzer-Tool.git
+   
    cd wifi-security-analyzer-tool
 
-2. Ensure your Wi-Fi adapter is set to monitor mode (Linux example):
+3. Ensure your Wi-Fi adapter is set to monitor mode (Linux example):
    sudo airmon-ng start wlan0
 Replace wlan0 with your Wi-Fi interface name.
 
