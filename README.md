@@ -21,6 +21,7 @@ Prerequisites
 
 4. Optional Tools:
 - Install tcpdump for PyShark-based packet sniffing:
+  
   sudo apt-get install tcpdump
 - Aircrack-ng for advanced penetration testing (not included in this script).
 
@@ -31,7 +32,9 @@ Installation
    cd wifi-security-analyzer-tool
 
 3. Ensure your Wi-Fi adapter is set to monitor mode (Linux example):
+   
    sudo airmon-ng start wlan0
+   
    Replace wlan0 with your Wi-Fi interface name.
 
 Usage
@@ -45,6 +48,9 @@ Wi-Fi Security Analyzer
 3. Measure Performance
 4. Generate Heatmap
 5. Exit
+
+In order to create a standalone executable you may use PyInstaller to convert the user_interface.py file.
+
 
 Feature Instructions
 1. Network Scanning
@@ -84,16 +90,18 @@ Monitor Mode Setup (Linux)
 
 3. After scanning/sniffing, revert to managed mode:
    sudo airmon-ng stop wlan0mon
+   
    sudo ifconfig wlan0 up
 
 Examples
 1. Example Output for Network Scanning
+   
 Scanning for Wi-Fi networks...
 SSID: HomeNetwork, BSSID: 00:1A:2B:3C:4D:5E, RSSI: -40 dBm
 SSID: CoffeeShop, BSSID: 11:22:33:44:55:66, RSSI: -65 dBm
 
 
-2. Example Heatmap Visualization
+3. Example Heatmap Visualization
 After selecting the heatmap option, you’ll see a graphical representation of Wi-Fi signal strength.
 
 Known Issues
