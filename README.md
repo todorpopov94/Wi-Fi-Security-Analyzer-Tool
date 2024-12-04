@@ -32,7 +32,7 @@ Installation
 
 3. Ensure your Wi-Fi adapter is set to monitor mode (Linux example):
    sudo airmon-ng start wlan0
-Replace wlan0 with your Wi-Fi interface name.
+   Replace wlan0 with your Wi-Fi interface name.
 
 Usage
 1. Run the tool with administrator/root privileges to access all features:
